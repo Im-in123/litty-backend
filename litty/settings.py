@@ -177,6 +177,11 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_USER =  os.environ.get('email')
 EMAIL_HOST_PASSWORD = os.environ.get('password')
 
+SECURE_SSL_REDIRECT = True
+# CSRF_COOKIE_SECURE = True
+SECURE_REFERRER_POLICY = "no-referrer-when-downgrade"
+SECURE_CONTENT_TYPE_NOSNIFF = True
+
 
 
 django_heroku.settings(locals())
