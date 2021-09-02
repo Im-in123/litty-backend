@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-^*=37dist)=3yn-cpz%bzk5#idq$g^%x-b(qr=5ed&s%qw!byc
 DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
-
+# pip chill > requirements.txt dumps parent packages
 
 # Application definition
 
