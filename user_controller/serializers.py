@@ -57,8 +57,8 @@ class UserProfileSerializer(serializers.ModelSerializer):
     user = CustomUserSerializer(read_only=True)
     user_id = serializers.IntegerField(write_only=True)
     profile_picture = serializers.ImageField(read_only=True)
-    followers= UserFollowSerializer(many=True, ready_only=True)
-    following=UserFollowSerializer(many=True, ready_only=True)
+    followers= UserFollowSerializer(many=True, required=False)
+    following=UserFollowSerializer(many=True, required=False)
     # profile_picture_id = serializers.IntegerField(
     #     write_only=True, required=False)
     # message_count = serializers.SerializerMethodField("get_message_count")
